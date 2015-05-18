@@ -8,3 +8,31 @@
 .navbar-nav > li.menu-item > a {
 	font-size: 14px;
 }
+ul.qtranxs_language_chooser {
+	list-style: none;
+	padding-left: 0;
+	display: none;
+}
+
+ul.qtranxs_language_chooser li {
+	padding-right: 1em;
+}
+
+.qtranxs_language_chooser .active {
+    font-weight: bold;
+}
+
+.qtranxs-lang-menu {
+		display: inherit;
+}
+
+@media (min-width: 768px) {
+	.qtranxs_language_chooser, .lac-topbar-divider {
+		display: inline !important;
+	}
+
+	.qtranxs-lang-menu {
+		display: none !important;
+	}
+}
+
