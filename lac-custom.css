@@ -58,3 +58,32 @@ ul.qtranxs_language_chooser li {
 	}
 }
 
+/* Footer */
+
+footer img {
+	height: 80px;
+	margin-bottom: 2em;
+}
+
+footer ul.dch {
+	float: right;
+}
+
+
+footer ul, footer li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li  {
+	float: left;
+	clear: none;
+	margin-right: 1em;
+}
+
+#footer-area .copyright ul li {
+    border-bottom: none;
+}
+
+
