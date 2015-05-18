@@ -94,3 +94,13 @@ footer li  {
     font-size: 12px;
 }
 
+.post-inner-content {
+	border: none;
+	background-color: inherit;
+	padding-left: 0;
+}
+
+.post-inner-content:first-child {
+	border-top: none;
+}
+
