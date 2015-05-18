@@ -298,3 +298,24 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load custom nav walker
  */
 require get_template_directory() . '/inc/navwalker.php';
+
+/**
+ * Register news post type
+ */
+
+function create_news_posttype() {
+  register_post_type( 'news_post',
+    array(
+      'labels' => array(
+        'name' => __( 'News Posts' ),
+        'singular_name' => __( 'News Post' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => false,
+      'taxonomies' => Array('category')
+    )
+  );
+}
+add_action( 'init', 'create_news_posttype' );
+
