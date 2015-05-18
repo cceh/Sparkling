@@ -12,6 +12,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
 		<?php if (!is_front_page()): ?>
+			<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+    			<?php if (function_exists('bcn_display')): ?>
+        				<?php bcn_display(); ?>
+        		<?php endif; ?>
+			</div>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
