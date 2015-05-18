@@ -1,0 +1,10 @@
+/* Header */
+
+.navbar .container {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.navbar-nav > li.menu-item > a {
+	font-size: 14px;
+}
