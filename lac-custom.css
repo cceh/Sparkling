@@ -121,3 +121,86 @@ img.team {
 	margin-top: 1.5em;
 }
 
+/* IMDI search plugin */
+
+.imdi_session {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	padding-top: 2em !important;
+}
+
+div.imdi_details h2 {
+	font-size: 1.5em;
+}
+
+div.imdi_details p{
+		font-family: 'Open Sans', Arial, sans-serif !important;
+
+}
+
+.search-results {
+	border-top: 1px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
+	padding-bottom: 1em !important;
+	margin-bottom: 0.5em !important;
+	
+}
+
+.imdi-category-tabs li {
+	font-weight: normal;
+}
+
+.imdi_detailtabs .ui-widget-header { 
+	border-bottom: 1px solid #aaaaaa !important; 
+}
+
+.imdi_detailtabs .ui-widget-header li a span { 
+	position: relative;
+	top: 5px; 
+}
+
+#categories b {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: grey;
+	padding-right: 2em;
+	text-transform: uppercase;
+
+}
+
+#categories ul {
+	padding-left: 1em;
+	padding-top: 2em;
+	/*padding-bottom: 2em;	*/
+	margin-bottom: 0 !important;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.imdi-category-tabs .ui-tabs-panel {
+	padding-bottom: 3em !important;
+}
+
+#categories .ui-widget-content a {
+	color: white;
+}
+
+#results {
+	/*font-weight: bold;*/
+	margin-bottom: 0;
+}
+
+#imdi-archive-search-plugin-query .imdi-category-tabs .ui-tabs-panel{
+  padding-left:0.2em;
+  padding-right:0.2em;
+}
+
+#imdi-archive-search-plugin-query #categories ul {
+  margin:0;
+  padding-left:0.2em;
+}
+
+.imdi_details li.resource {
+  float:left;
+  width:100%;
+}
