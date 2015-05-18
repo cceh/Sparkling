@@ -8,24 +8,30 @@
 	<?php the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' )); ?>
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
+			<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+    			<?php if (function_exists('bcn_display')): ?>
+        				<?php bcn_display(); ?>
+        		<?php endif; ?>
+			</div>
 
 			<h1 class="entry-title "><?php the_title(); ?></h1>
+			<?php if (get_query_var( 'show_entry_meta' )): ?>
+				<div class="entry-meta">
+					<?php sparkling_posted_on(); ?>
 
-			<div class="entry-meta">
-				<?php sparkling_posted_on(); ?>
+					<?php
+						/* translators: used between list items, there is a space after the comma */
+						$categories_list = get_the_category_list( __( ', ', 'sparkling' ) );
+						if ( $categories_list && sparkling_categorized_blog() ) :
+					?>
+					<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+						<?php printf( __( ' %1$s', 'sparkling' ), $categories_list ); ?>
+					</span>
+					<?php endif; // End if categories ?>
+					<?php edit_post_link( __( 'Edit', 'sparkling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
 
-				<?php
-					/* translators: used between list items, there is a space after the comma */
-					$categories_list = get_the_category_list( __( ', ', 'sparkling' ) );
-					if ( $categories_list && sparkling_categorized_blog() ) :
-				?>
-				<span class="cat-links"><i class="fa fa-folder-open-o"></i>
-					<?php printf( __( ' %1$s', 'sparkling' ), $categories_list ); ?>
-				</span>
-				<?php endif; // End if categories ?>
-				<?php edit_post_link( __( 'Edit', 'sparkling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
-
-			</div><!-- .entry-meta -->
+				</div><!-- .entry-meta -->
+			<?php endif; ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
