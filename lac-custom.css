@@ -8,6 +8,28 @@
 .navbar-nav > li.menu-item > a {
 	font-size: 14px;
 }
+
+.lac-topbar {
+	float: right;
+	margin-top: 1em;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.lac-topbar a {
+	color: #999;	
+}
+
+.lac-topbar * {
+	display: inline;
+}
+
+.lac-topbar-divider {
+	padding-left: 1em;
+	padding-right: 1em;
+	display: none;
+}
+
 ul.qtranxs_language_chooser {
 	list-style: none;
 	padding-left: 0;
