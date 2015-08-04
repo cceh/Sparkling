@@ -94,6 +94,14 @@ footer li  {
     font-size: 12px;
 }
 
+.single-featured-caption {
+  font-size:0.82em;
+  font-style:italic;
+}
+.single-featured:hover {
+  opacity: 1;
+}
+
 .post-inner-content {
 	border: none;
 	background-color: inherit;
@@ -102,6 +110,43 @@ footer li  {
 
 .post-inner-content:first-child {
 	border-top: none;
+}
+
+.entry-content blockquote {
+  font-size:14px;
+}
+.entry-content h4 {
+  margin-top:40px;
+}
+.entry-content ul {
+  padding-left:1.5em;
+}
+
+/* Widgets & Aside */
+
+.well {
+  background-color: #fff;
+  padding: 30px;
+  overflow: hidden;
+  clear: both;
+  border:0 none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#secondary .widget {
+  margin-bottom: 20px;
+}
+
+.widget ul li:last-child {
+  border-bottom:0 none;
+}
+
+#secondary .widget a {
+  color: #999;
+}
+#secondary .widget a:hover {
+  color:#444;
 }
 
 /* Projects overview */
@@ -123,10 +168,13 @@ img.team {
 
 /* IMDI search plugin */
 
-.imdi_session {
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-	padding-top: 2em !important;
+#main div.imdi_session {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 2em;
+}
+#main div.imdi_session.res_only {
+  padding-top:0;
 }
 
 div.imdi_details h2 {
