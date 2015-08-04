@@ -24,8 +24,6 @@ get_header(); ?>
 				endif;
 			?>
 
-			<?php sparkling_post_nav(); ?>
-
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
