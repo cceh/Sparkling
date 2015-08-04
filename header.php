@@ -33,13 +33,14 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">			<div class="lac-topbar">
-			<a href="http://dch.phil-fak.uni-koeln.de/">Data Center for the Humanities</a>
-			<?php if (function_exists("qtranxf_generateLanguageSelectCode")): ?>
-				<span class="lac-topbar-divider"> | </span>
-				<?php qtranxf_generateLanguageSelectCode("text"); ?>
-			<?php endif; ?>
-			</div>
+			<div class="container">
+				<div class="lac-topbar">
+					<a href="http://dch.phil-fak.uni-koeln.de/">Data Center for the Humanities</a>
+					<?php if (function_exists("qtranxf_generateLanguageSelectCode")): ?>
+						<span class="lac-topbar-divider"> | </span>
+						<?php qtranxf_generateLanguageSelectCode("text"); ?>
+					<?php endif; ?>
+				</div>
 				<div class="row">
 					<div class="site-navigation-inner col-sm-12">
 						<div class="navbar-header">
