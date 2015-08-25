@@ -1,3 +1,9 @@
+/* Multi-CAST */
+
+.imdi-resource-content[class*=Multi-CAST] #annotations {
+	display: none;
+}
+
 /* Header */
 
 .navbar .container {
